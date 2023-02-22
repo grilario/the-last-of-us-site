@@ -1,7 +1,7 @@
 ---
-import "@fontsource/poppins/400.css"
-import "@fontsource/poppins/500.css"
-import "@fontsource/poppins/700.css"
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/700.css";
 ---
 
 <!DOCTYPE html>
@@ -17,3 +17,21 @@ import "@fontsource/poppins/700.css"
     <slot />
   </body>
 </html>
+<style is:global>
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #0D0D0D;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #262626;
+    border-radius: 14px;
+  }
+
+  body {
+    background-color: #03080D;
+  }
+</style>
