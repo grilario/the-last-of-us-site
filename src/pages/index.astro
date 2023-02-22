@@ -3,7 +3,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <header class="w-full max-w-[1400px] mx-auto absolute top-0 left-0 right-0 bottom-0 z-20 py-5 px-10">
+  <header
+    class="w-full max-w-[1400px] mx-auto absolute top-0 left-0 right-0 bottom-0 z-20 py-5 px-10"
+  >
     <nav>
       <ul class="flex justify-end list-none gap-5">
         <li><a class="text-white text-sm font-bold p-1" href="#">Jogo</a></li>
@@ -37,6 +39,44 @@ import Layout from "../layouts/Layout.astro";
         src="/scroll.svg"
         alt="Scroll"
       />
+    </section>
+    <section class="flex">
+      <div class="w-1/3">
+        <div class="h-0 overflow-hidden pt-[48%] relative group">
+          <h2 class="absolute top-6 left-6 z-20 text-white text-2xl font-bold">
+            Personagens
+          </h2>
+          <img
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover transition-all group-hover:w-[120%] group-hover:h-[120%]"
+            src="/characters.jpg"
+            alt="Elie and Joel"
+          />
+        </div>
+      </div>
+      <div class="w-1/3">
+        <div class="h-0 overflow-hidden pt-[48%] relative group">
+          <h2 class="absolute top-6 left-6 z-20 text-white text-2xl font-bold">
+            Monstros
+          </h2>
+          <img
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover transition-all group-hover:w-[120%] group-hover:h-[120%]"
+            src="/monsters.jpg"
+            alt="Elie and Joel"
+          />
+        </div>
+      </div>
+      <div class="w-1/3">
+        <div class="h-0 overflow-hidden pt-[48%] relative group">
+          <h2 class="absolute top-6 left-6 z-20 text-white text-2xl font-bold">
+            Armas
+          </h2>
+          <img
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover transition-all group-hover:w-[120%] group-hover:h-[120%]"
+            src="/weapons.jpg"
+            alt="Elie and Joel"
+          />
+        </div>
+      </div>
     </section>
   </main>
 </Layout>
